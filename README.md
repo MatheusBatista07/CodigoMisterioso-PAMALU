@@ -1,5 +1,5 @@
 tema: Livraria 
-problema: Em uma livraia, o estudante precisa encontrar o livro DOM CASMERDA, ao perguntar a dona como a livraria era organizada, ela falou que não era organizada convencionalmente.
+problema: Em uma livraia, o estudante precisa encontrar o livro Dom Casmurro, ao perguntar a dona como a livraria era organizada, ela falou que não era organizada convencionalmente.
 Enigma 1: Como a era organizada?
 > dica 1: A dona era fanática pela sua língua e apreciava os recursos linguísticos usados pelos autores.
 > dica 2: Os autores apreciados pela dona faziam parte da escola literária modernismo.
