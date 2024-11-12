@@ -1,73 +1,69 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#include <stdio.h>
 #include <string.h>
+// Em uma livraia, o estudante precisa encontrar o livro DOM CASMURRO, ao perguntar a dona como a livraria era organizada, ela falou que n√£o era organizada convencionalmente.
 
-setlocale(LC_ALL, "Portugese"); 
-
-// Em uma livraia, o estudante precisa encontrar o livro DOM CASMERDA, ao perguntar a dona como a livraria era organizada, ela falou que n„o era organizada convencionalmente.
-
-// FunÁ„o para o Enigma 1 - Como a livraria È organizada
+// Fun√ß√£o para o Enigma 1 - Como a livraria √© organizada
 void enigma1() {
     char resposta[50];
 
     printf("Enigma 1: Como a livraria era organizada?\n");
-    printf("Dica 1: A dona era fanatica pela sua lingua e apreciava os recursos linguisticos usados pelos autores.\n");
-    printf("Dica 2: Os autores apreciados pela dona faziam parte da escola liter·ria modernismo.\n");
-    printf("Dica 3: Um dos recursos mais apreciados pela dona era aqueles que atribuiam efeito ao texto, dando Ínfase ‡ uma ideia.\n");
+    printf("Dica 1: A dona era fan√°tica pela sua l√≠ngua e apreciava os recursos lingu√≠sticos usados pelos autores.\n");
+    printf("Dica 2: Os autores apreciados pela dona faziam parte da escola liter√°ria modernismo.\n");
+    printf("Dica 3: Um dos recursos mais apreciados pela dona era aqueles que atribuiam efeito ao texto, dando √™nfase √† uma id√©ia.\n");
     printf("Digite sua resposta: ");
-    scanf("%49s", resposta);  
+    scanf("%49s", resposta);
     
-    if (strcmp(resposta, "") == 0) {
-        printf("Correto! A livraria era organizada por ...\n\n");
+    if (strcmp(resposta, "figuras_de_linguagens") == 0) {
+        printf("Correto! A livraria era organizada por figuras de linguagens\n\n");
     } else {
         printf("Resposta errada. Tente novamente!\n\n");
     }
 }
 
-// FunÁ„o para o Enigma 2 - Qual a seÁ„o o livro estava?
+// Fun√ß√£o para o Enigma 2 - Qual a se√ß√£o o livro estava?
 void enigma2() {
     char resposta[50];
 
-    printf("Enigma 2: Qual a secao o livro estava?\n");
-    printf("Dica 1: As pessoas costumam dar nomes ‡ coisas inexistentes.\n");
-    printf("Dica 2: \"Joana, cuidado ao lavar as louÁas! N„o quero saber de nenhuma asa de xÌcara quebrada.\"\n");
-    printf("Digite sua resposta: ")
-    scanf("%49s", Resposta); 
+    printf("Enigma 2: Em qual se√ß√£o o livro estava?\n");
+    printf("Dica 1: As pessoas costumam dar nomes √† coisas inexistentes.\n");
+    printf("Dica 2: \"Joana, cuidado ao lavar as lou√ßas! N√£o quero saber de nenhuma asa de x√≠cara quebrada.\"\n");
+    printf("Digite sua resposta: ");
+    scanf("%49s", resposta); 
 
-    if (strcmp(resposta, Pleonasmo) == 0) {
-        printf("Correto! O livro estava na seÁ„o de Cata.\n\n");
+    if (strcmp(resposta, "catacrese") == 0) {
+        printf("Correto! O livro estava na se√ß√£o de Catacrese.\n\n");
     } else {
         printf("Resposta errada. Tente novamente!\n\n");
     }
 }
 
-// FunÁ„o para o Enigma 3 - Qual estante o livro se encontrava?
+// Fun√ß√£o para o Enigma 3 - Qual estante o livro se encontrava?
 void enigma3() {
     char resposta[50];
 
     printf("Enigma 3: Qual estante o livro se encontrava?\n");
-    printf("Dica 1: Quando eu n„o sei o nome certo, eu chamo da forma mais famosa.\n");
+    printf("Dica 1: Quando eu n√£o sei o nome certo, eu chamo da forma mais famosa.\n");
     printf("Dica 2: \"Bentinho limpou o ouvido com cotonete.\"\n");
     printf("Digite sua resposta: ");
     scanf("%49s", resposta);  
     
-    if (strcmp(resposta, "Meto") == 0) {
-        printf("Correto! O livro estava na estante de Ironia.\n\n");
+    if (strcmp(resposta, "Metonimia") == 0) {
+        printf("Correto! O livro estava na estante de Meton√≠mia.\n\n");
     } else {
         printf("Resposta errada. Tente novamente!\n\n");
     }
 }
 
 int main() {
-    printf("Bem-vindo ao mistÈrio da livraria! Vamos tentar encontrar o livro 'Dom Casmerda'.\n");
+	setlocale(LC_ALL, "Portuguese"); 
+    printf("Bem-vindo ao mist√©rio da livraria! Vamos tentar encontrar o livro 'Dom Casmurro'.\n");
 
     enigma1();
     enigma2();
     enigma3();
 
-    printf("ParabÈns! VocÍ resolveu todos os enigmas e encontrou o livro!\n");
+    printf("Parab√©ns! Voc√™ resolveu todos os enigmas e encontrou o livro!\n");
     return 0;
 }
-
